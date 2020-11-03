@@ -1,0 +1,71 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import CoreUI styles
+@import "~@coreui/coreui/scss/coreui.scss";
+
+// If you want to add something do it here
+@import "custom";
+
+.c-sidebar {
+  background-color: white;
+  margin-left: 70px !important;
+  border-right: 2px solid lightgray;
+  .c-sidebar-brand {
+    background-color: white;
+  }
+
+  .c-sidebar-minimizer-container {
+    text-align: end;
+  }
+  .c-sidebar-minimizer {
+    width: 20px;
+    border-radius: 5px;
+    height: 40px;
+    background: white;
+    border: 1px solid lightgrey;
+    display: unset;
+    margin-bottom: 100px;
+    &::before {
+      display: none !important;
+    }
+  }
+  .c-item-card {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 0px 28px -14px rgba(0, 0, 0, 0.81);
+    color: black;
+    margin-top: 20px;
+    width: 80%;
+    align-self: center;
+  }
+}
+.c-sidebar-minimized {
+  width: 0px !important;
+}
+.c-main-sidebar {
+  width: 70px;
+  padding: 10px;
+  background-color: white;
+  border-right: 2px solid #fddd4d;
+
+  ul {
+    list-style: none;
+    padding: unset;
+    text-align: center;
+    margin-top: 50px;
+    li {
+      margin-top: 20px;
+      padding: 5px;
+      padding-top: 25px;
+      border-top: 1px solid lightgray;
+      a {
+        color: black;
+        &:active {
+          color: white;
+        }
+      }
+    }
+  }
+}
