@@ -1,16 +1,13 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
 
 import CIcon from "@coreui/icons-react";
 import Logo from "../assets/icons/logo.svg";
 // sidebar nav config
 
 const TheSidebar = () => {
-  const show = useSelector((state) => state.sidebarShow);
-  console.log("show???->", show);
   return (
     <div className="c-main-sidebar">
-      <img src={Logo} width={50} height={50} />
+      <img src={Logo} width={50} height={50} alt="" />
       <ul>
         <li>
           <a href="#/dashboard">
